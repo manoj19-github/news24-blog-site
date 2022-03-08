@@ -77,10 +77,10 @@ export const insertAction=(myTitle,myCategory,desc,imageData,router)=>async (dis
 
     if(data.status){
       dispatch({type:myPostType.ADD_NEW_POST,payload:data.posts})
-      router.push(`/posts/myPosts`)
+      router.push(`/`)
       Swal.fire(
-        'Deleted!',
-        'Your file has been deleted.',
+        'New Post Added',
+        'Your Post is added successfully',
         'success'
       )
     }else{

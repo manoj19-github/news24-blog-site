@@ -113,7 +113,7 @@ const Header = () => {
                           className="list-none hover:underline transition-all duration-500 ease-in cursor-pointer  flex-1 text-center capitalize">
                           sign out
                         </li>
-                        <Link href={"/posts/create"} passHref>
+                        <Link href={"/posts/actions/create"} passHref>
                           <li
                           className="list-none hover:underline transition-all duration-500 ease-in cursor-pointer  flex-1 text-center capitalize">
                             Create New Post
