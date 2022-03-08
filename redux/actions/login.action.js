@@ -14,7 +14,7 @@ export const loginAction=(credential,router)=>async dispatch=>{
     document.cookie=`userToken=${data.userToken};expires=${1000*60*60*24}`
     sessionStorage.setItem("news24__userCredential",
     JSON.stringify({userToken:data.userToken,userCredential:data.userData}))
-    router.push(`/posts/myPosts/${data.userData.userId}`)
+    router.push("/")
   }catch(err){
     console.log(err)
     dispatch({type:loginTypes.LOGIN_FAIL})
