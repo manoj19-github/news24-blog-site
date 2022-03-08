@@ -23,9 +23,9 @@ const Category = ({myPostData}) => {
       <p className="pb-2">{myPostData.myDetails?.email}</p>
     </div>
     {
-     allMyPost?.map((data,index)=>(
+     allMyPost ? allMyPost.map((data,index)=>(
         <Post key={data._id} postData={data} isMyPost/>
-      ))
+      )): <h4 className="mt-5 text-center text-gray-500">No Post Exists To Show</h4>
     }
 
 
